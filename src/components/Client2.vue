@@ -2,7 +2,7 @@
   <obj id="client-1"
     title="Client 2"
     title-position="bottom"
-    bg="#389445" 
+    bg="#43A047" 
     :width="100"
     :height="100"
     :right="75">

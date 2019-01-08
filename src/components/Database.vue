@@ -1,7 +1,7 @@
 <template>
   <obj id="database"
     title="Notif DB"
-    bg="#813B88"
+    bg="#7B1FA2"
     :width="75"
     :height="75"
     :top="55">
@@ -39,6 +39,6 @@ export default {
   border-radius: 50%;
 }
 .messages-count.empty {
-  color: #3A4F51;
+  color: #607D8B;
 }
 </style>

@@ -2,7 +2,7 @@
   <obj id="client-1" 
     title="Client 1"
     title-position="bottom"
-    bg="#415E9D" 
+    bg="#1E88E5" 
     :width="100"
     :height="100"
     :left="75">
@@ -94,8 +94,9 @@ export default {
   margin: auto;
   width: 40px;
   height: 40px;
+  color: #607D8B;
   line-height: 40px;
-  background: #36435F;
+  background: #21272A;
   text-align: center;
   font-weight: bold;
   border-radius: 50%;
@@ -104,7 +105,8 @@ export default {
 }
 
 .notifications-count.not-empty {
-  background: #BB3F3F;
+  background: #C2185B;
+  color: white;
 }
 
 .notifications-count.blast {
@@ -125,7 +127,7 @@ export default {
 .tooltip {
   position: absolute;
   width: 200px;
-  background: #CF3636;
+  background: #C2185B;
   color: white;
   border-radius: 5px;
   left: -80px;
@@ -135,7 +137,7 @@ export default {
 .tooltip:after {
   content: '';
   position: absolute;
-  border-top: 10px solid #CF3636;
+  border-top: 10px solid #C2185B;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: none;

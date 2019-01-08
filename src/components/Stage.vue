@@ -285,7 +285,7 @@ export default {
 }
 
 body {
-  background: #22292A;
+  background: #21292E;
   color: white;
   text-align: center;
 }
