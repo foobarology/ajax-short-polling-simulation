@@ -303,9 +303,14 @@ body {
   background-color: #2D484C;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn:disabled {
   background-color: #2B3435;
   cursor: default;
+  opacity: .5;
 }
 
 .stage {
