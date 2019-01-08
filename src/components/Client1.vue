@@ -17,7 +17,7 @@
       </transition>
       {{ notificationsCount }}
     </div>
-    <div class="actions">
+    <div class="actions" v-if="buttons">
       <button v-if="!polling" class="btn" @click="triggerRunPolling">
         Run Polling
       </button>
@@ -38,7 +38,11 @@ export default {
     polling: {
       type: Boolean,
       default: false,
-    }
+    },
+    buttons: {
+      type: Boolean,
+      default: false,
+    },
   },
   data () {
     return {

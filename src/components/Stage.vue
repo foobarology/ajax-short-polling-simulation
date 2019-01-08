@@ -10,13 +10,14 @@
     <client-1 ref="client1" 
       :notifications-count="notificationsCount"
       :polling="polling"
+      :buttons="buttons"
       @run="client1StartPolling"
       @stop="client1StopPolling">
     </client-1>
     <app ref="app"></app>
     <database ref="database" :messages="messages"></database>
     <bullet ref="client2HttpBullet"></bullet>
-    <client-2 ref="client2" :submitting="client2HttpActive" @post="client2PostMessage"></client-2>
+    <client-2 ref="client2" :buttons="buttons" :submitting="client2HttpActive" @post="client2PostMessage"></client-2>
 
     <transition name="fade">
       <clock v-show="showClock" ref="clock"></clock>
@@ -68,6 +69,7 @@ export default {
       polling: false,
       messages: [],
       notificationsCount: 0,
+      buttons: true,
 
       showClock: false,
 
@@ -83,6 +85,17 @@ export default {
     }
   },
   mounted () {
+    if (!this.buttons) {
+      setTimeout(() => {
+        this.client1StartPolling();
+      }, 1000);
+
+      window.onkeydown = e => {
+        if (e.ctrlKey && e.keyCode == 13) {
+          this.client2PostMessage();
+        }
+      };
+    }
   },
   methods: {
     client1StartPolling () {
