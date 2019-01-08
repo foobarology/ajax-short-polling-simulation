@@ -25,6 +25,14 @@
     <bullet ref="client1HttpBullet"></bullet>
     <bullet ref="client1AppToDatabaseBullet"></bullet>
     <bullet ref="client2AppToDatabaseBullet"></bullet>
+
+    <footer>
+      &copy; 2019 by Foobarology 
+      <span class="sep">/</span>
+      <a target="_blank" href="https://www.instagram.com/foobarology">instagram</a> 
+      <span class="sep">/</span>
+      <a target="_blank" href="https://www.facebook.com/foobarology">facebook</a> 
+    </footer>
   </div>
 </template>
 
@@ -333,5 +341,24 @@ body {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
   transform: scale(1.5);
+}
+
+footer {
+  position: fixed;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  color: #729297;
+  font-size: .9rem;
+}
+
+footer a[href] {
+  color: #42818A;
+  text-decoration: none;
+}
+
+footer .sep {
+  opacity: .2;
 }
 </style>
