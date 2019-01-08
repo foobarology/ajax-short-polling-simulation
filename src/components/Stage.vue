@@ -14,7 +14,7 @@
       @run="client1StartPolling"
       @stop="client1StopPolling">
     </client-1>
-    <app ref="app"></app>
+    <app ref="app" :active="client1AppDbActive || client2AppDbActive"></app>
     <database ref="database" :messages="messages"></database>
     <bullet ref="client2HttpBullet"></bullet>
     <client-2 ref="client2" :buttons="buttons" :submitting="client2HttpActive" @post="client2PostMessage"></client-2>
