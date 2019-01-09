@@ -38,6 +38,8 @@
       <a target="_blank" href="https://www.instagram.com/foobarology">instagram</a> 
       <span class="sep">/</span>
       <a target="_blank" href="https://www.facebook.com/foobarology">facebook</a> 
+      <span class="sep">/</span>
+      <a target="_blank" href="https://www.github.com/foobarology">github</a> 
     </footer>
   </div>
 </template>
